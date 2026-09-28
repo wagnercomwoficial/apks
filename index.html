@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meus Apps</title>
+  <meta name="description" content="Repositório de APKs para baixar e instalar no Android.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icone.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-conteudo">
+      <img src="icone.svg" alt="" class="logo" width="44" height="44">
+      <div>
+        <h1>Meus Apps</h1>
+        <p class="subtitulo">Baixe e instale direto no seu Android</p>
+      </div>
+    </div>
+    <label class="busca">
+      <span class="sr">Buscar app</span>
+      <input id="busca" type="search" placeholder="Buscar app…" autocomplete="off">
+    </label>
+  </header>
+
+  <main>
+    <p id="status" class="status">Carregando apps…</p>
+    <ul id="lista" class="lista" aria-live="polite"></ul>
+
+    <details class="ajuda">
+      <summary>Como instalar um APK no Android</summary>
+      <ol>
+        <li>Toque em <strong>Baixar APK</strong> no app que você quer.</li>
+        <li>Quando terminar o download, abra o arquivo pela notificação ou pela pasta <em>Downloads</em>.</li>
+        <li>Se aparecer um aviso, toque em <strong>Configurações</strong> e ative
+          <strong>Permitir desta fonte</strong> para o navegador.</li>
+        <li>Toque em <strong>Instalar</strong>. Para atualizar, é só instalar a versão nova por cima.</li>
+      </ol>
+    </details>
+  </main>
+
+  <footer class="rodape">
+    <a href="https://github.com/wagnercomwoficial/apks">Ver no GitHub</a>
+  </footer>
+
+  <template id="modelo-app">
+    <li class="app">
+      <div class="app-icone" aria-hidden="true"></div>
+      <div class="app-info">
+        <h2 class="app-nome"></h2>
+        <p class="app-descricao"></p>
+        <p class="app-meta"></p>
+      </div>
+      <a class="botao" download>Baixar APK</a>
+    </li>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
