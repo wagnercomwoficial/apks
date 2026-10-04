@@ -1,3 +1,14 @@
 {
-  "apps": []
+  "apps": [
+    {
+      "id": "kanto-deckbuilder",
+      "nome": "Kanto Deckbuilder",
+      "descricao": "Deckbuilder roguelike com Pokémon de Kanto: monte o time, capture e enfrente 8 torres e a Elite 4.",
+      "versao": "1.0.0",
+      "atualizado": "2026-10-04",
+      "tamanho_mb": 98.1,
+      "icone": "icons/kanto-deckbuilder.png",
+      "apk": "https://github.com/wagnercomwoficial/apks/releases/download/kanto-deckbuilder/kanto-deckbuilder.apk"
+    }
+  ]
 }
